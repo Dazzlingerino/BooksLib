@@ -27,8 +27,6 @@ export const EditModal = ({open, book, onSave, onCancel}) => {
     const [title, setTitle] = useState(book.Title)
     const [author, setAuthor] = useState(book.Author)
     const [date, setDate] = useState(book.Date)
-    const [img, setImg] = useState(book.img)
-    const [id, setId] = useState(book.id)
     const handleTitleChange = (e) => {
         setTitle(e.target.value)
     }
@@ -40,11 +38,11 @@ export const EditModal = ({open, book, onSave, onCancel}) => {
     }
     const onSaveClick = () => {
         onSave({
-            id: id,
+            id: book.id,
             Author: author,
             Date: date,
             Title: title,
-            img: img,
+            img: book.img,
         })
     }
 

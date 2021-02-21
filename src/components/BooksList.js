@@ -22,6 +22,7 @@ import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import {EditModal} from "./EditModal";
 import axios from "axios";
+
 /*var express = require('express')
 var cors = require('cors')
 var app = express()
@@ -115,14 +116,7 @@ function BooksList() {
 
     useEffect(() => {
         const fetchData = async () => {
-            const booksData = await axios.get('http://192.168.0.82:9000/books.json', {
-                    header: {
-                        'Access-Control-Allow-Credentials': true,
-                        'Access-Control-Allow-Headers':'*',
-                        'Access-Control-Allow-Origin':'http://localhost:3000',
-                        crossdomain: true
-                    }
-                }
+            const booksData = await axios.get('/BooksLib/books.json',
             );
             setBooks(processingBooksData(booksData.data));
         };
@@ -258,14 +252,11 @@ function BooksList() {
                                             <Button size="small" color="primary">
                                                 View
                                             </Button>
-                                            <Button size="small" color="primary" onClick={() => {
-                                                handleOpen(bookDetail)
-                                            }}>
+                                            <Button size="small" color="primary" onClick={() => handleOpen(bookDetail)}>
                                                 Edit
                                             </Button>
-                                            <Button size="small" color="secondary" onClick={() => {
-                                                handleDelete(bookDetail)
-                                            }}>
+                                            <Button size="small" color="secondary"
+                                                    onClick={() => handleDelete(bookDetail)}>
                                                 Delete
                                             </Button>
                                         </CardActions>
@@ -273,10 +264,12 @@ function BooksList() {
                                 </Grid>
                             ))}
                             {open &&
-                            <EditModal open={open}
-                                       book={bookDescription}
-                                       onSave={(object) => handleOnCLickSave(object)}
-                                       onCancel={handleClose}/>
+                            <EditModal
+                                open={open}
+                                book={bookDescription}
+                                onSave={(object) => handleOnCLickSave(object)}
+                                onCancel={handleClose}
+                            />
                             }
                         </Grid>
                     </Container>
