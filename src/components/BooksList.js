@@ -120,6 +120,7 @@ function BooksList() {
         items[items.findIndex(el => el.id === object.id)] = {...object}
         setBooks(processBooksData(items))
         setBookDescription(object)
+        setOpen(false);
     }
 
     const handleClickOpen = () => {
@@ -244,7 +245,8 @@ function BooksList() {
                                             <Button size="small" color="primary">
                                                 View
                                             </Button>
-                                            <Button size="small" color="primary" onClick={() => handleOpen(bookDetail)}>
+                                            <Button size="small" color="primary"
+                                                    onClick={() => handleOpen(bookDetail)}>
                                                 Edit
                                             </Button>
                                             <Button size="small" color="secondary"
