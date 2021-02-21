@@ -1,4 +1,3 @@
-/*import BooksData from '../books/data/books_data.json'*/
 import React, {useEffect} from 'react';
 import {createMuiTheme, makeStyles, MuiThemeProvider} from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -23,12 +22,6 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import {EditModal} from "./EditModal";
 import axios from "axios";
 
-/*var express = require('express')
-var cors = require('cors')
-var app = express()
-
-app.use(cors())*/
-
 function Copyright() {
     return (
         <Typography variant="body2" color="textSecondary" align="center">
@@ -41,7 +34,6 @@ function Copyright() {
         </Typography>
     );
 }
-
 
 const themeX = createMuiTheme({
     palette: {
@@ -118,7 +110,7 @@ function BooksList() {
         const fetchData = async () => {
             const booksData = await axios.get('/BooksLib/books.json',
             );
-            setBooks(processingBooksData(booksData.data));
+            setBooks(processBooksData(booksData.data));
         };
         fetchData();
     }, []);
@@ -126,7 +118,7 @@ function BooksList() {
     const handleOnCLickSave = (object) => {
         let items = [...books];
         items[items.findIndex(el => el.id === object.id)] = {...object}
-        setBooks(processingBooksData(items))
+        setBooks(processBooksData(items))
         setBookDescription(object)
     }
 
@@ -149,7 +141,7 @@ function BooksList() {
 
     const handleDelete = (object) => {
         let items = [...books];
-        setBooks(processingBooksData(items.filter(data => data.id !== object.id)))
+        setBooks(processBooksData(items.filter(data => data.id !== object.id)))
         alert(`Book "${object.Title}" was deleted`)
     }
 
@@ -290,7 +282,7 @@ function BooksList() {
 
 export default BooksList;
 
-const processingBooksData = books => {
+const processBooksData = books => {
     function trim_str(str) {
         const regex = /[^a-zA-Z\s]+/g;
         return str.replace(regex, '').toLowerCase().trim().split(' ').map((word) => {
