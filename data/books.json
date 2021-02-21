@@ -1,0 +1,58 @@
+[
+  {
+    "id": 0,
+    "Author": "Gabriel García Márquez",
+    "Date": 1970,
+    "Title": "One Hundred Years of Solitude",
+    "img": "https://www.thegreatestbooks.org/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdWNDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--28bdcc870890ba8057f74f5baef8045ead7878a0/51bfZSHE9jL._SL160_.jpg"
+  },
+  {
+    "id": 12,
+    "Author": "Miguel de Cervantes",
+    "Date": 1605,
+    "Title": "Don Quixote ",
+    "img": "https://www.thegreatestbooks.org/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1lDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a0a4a747d3bed894779751250e4fb4b22b8df307/51nBHIQv6zL._SL160_.jpg"
+  },
+  {
+    "id": 2,
+    "Author": "F. Scott Fitzgerald",
+    "Date": 1925,
+    "Title": "The Great Gatsby",
+    "img": "https://www.thegreatestbooks.org/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBjdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--bc32492251b181ab8abf4b7868b98822a56496b5/41iers+HLSL._SL160_.jpg"
+  },
+  {
+    "id": 3,
+    "Author": "Herman Melville",
+    "Date": 1851,
+    "Title": "Moby Dick",
+    "img": "https://www.thegreatestbooks.org/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBandDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9a0510ce0f5dbfedc205712654bf8c72c9118c04/41WMBltiqdL._SL160_.jpg"
+  },
+  {
+    "id": 4,
+    "Author": "Leo Tolstoy",
+    "Date": 1869,
+    "Title": "War and@ Peace %",
+    "img": "https://www.thegreatestbooks.org/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBazhCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--256243934558e7403abbf9f627fcb0732bd2bc58/51J1nb00FLL._SL160_.jpg"
+  },
+  {
+    "id": 5,
+    "Author": "Gabriel García Márquez",
+    "Date": 1970,
+    "Title": "One Hundred Years of Solitude",
+    "img": "https://www.thegreatestbooks.org/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdWNDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--28bdcc870890ba8057f74f5baef8045ead7878a0/51bfZSHE9jL._SL160_.jpg"
+  },
+  {
+    "id": 7,
+    "Author": "Miguel de Cervantes",
+    "Date": 1605,
+    "Title": "Don Quixote ",
+    "img": "https://www.thegreatestbooks.org/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1lDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a0a4a747d3bed894779751250e4fb4b22b8df307/51nBHIQv6zL._SL160_.jpg"
+  },
+  {
+    "id": 8,
+    "Author": "F. Scott Fitzgerald",
+    "Date": 1925,
+    "Title": "The Great Gatsby",
+    "img": "https://www.thegreatestbooks.org/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBjdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--bc32492251b181ab8abf4b7868b98822a56496b5/41iers+HLSL._SL160_.jpg"
+  }
+]
